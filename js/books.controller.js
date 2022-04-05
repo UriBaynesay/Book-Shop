@@ -13,9 +13,9 @@ function renderBooks() {
         <td>${book.id}</td>
         <td>${book.title}</td>
         <td class="currency">${book.price}</td>
-        <td><button class="btn-review" data-trans="review" onclick="onReview('${book.id}')"></button></td>
-        <td><button class="btn-update" data-trans="update" onclick="onUpdateBook('${book.id}')"></button></td>
-        <td><button class="btn-delete" data-trans="delete" onclick="onDeleteBook('${book.id}')"></button></td>
+        <td><button type="button" class="btn btn-outline-info" data-trans="review" onclick="onReview('${book.id}')"></button></td>
+        <td><button type="button" class="btn btn-outline-primary" data-trans="update" onclick="onUpdateBook('${book.id}')"></button></td>
+        <td><button type="button" class="btn btn-outline-danger" data-trans="delete" onclick="onDeleteBook('${book.id}')"></button></td>
         </tr>`;
   });
 
@@ -40,7 +40,7 @@ function onReview(bookId) {
   elModal.innerHTML =
     bookName +
     bookDesc +
-    `<button class="btn-ext-modal" onclick="onCloseModal()">X</button>
+    `<button type="button" class="btn btn-outline-danger position-absolute top-0 start-0" onclick="onCloseModal()">X</button>
     <div class="rate">
       <button class="add-rate" onclick="onAddRate('${bookId}','+')">+</button>
       <a class="book-rate">${getBookRate(bookId)}</a>

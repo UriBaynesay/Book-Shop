@@ -1,39 +1,39 @@
 body{
-    background-color:lightblue;
+    background-color:#B7CADB;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 .body,.rtl{
     direction: rtl;
 }
-.gretting{
+/* .gretting{
     color: cadetblue;
     text-align: center;
-}
+} */
 
-table{
+/* table{
     border-style: outset;
     border: solid 2px aliceblue;
     margin: auto;
-}
+} */
 
-thead{
+/* thead{
     text-align: center;
     background-color: rgba(84, 84, 218, 0.472);
 }
 
 tbody{
     background-color: rgba(105, 157, 241, 0.705);
-}
+} */
 
-button{
+/* button{
     margin: 3px;
     border-radius: 3px;
     border: 0px;
 
-}
+} */
 
-.btn-delete{
+/* .btn-delete{
     background-color: orangered;
 }
 
@@ -52,7 +52,7 @@ button{
     background-color: rgba(28, 209, 28, 0.746);
     margin-left: 50%;
     transform: translateX(-50%);
-}
+} */
 
 .modal-container{
     border-radius: 10px;
@@ -105,6 +105,4 @@ button{
 footer{
     position: fixed;
     bottom: 0px;
-    margin-left: 50%;
-    transform: translateX(-50%);
 }

@@ -4,37 +4,50 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="lib/bootstrap.min.css" />
     <link rel="stylesheet" href="css/main.css" />
     <title>Books Managment</title>
   </head>
   <body onload="init()">
-    <sec class="header">
-      <h2 class="gretting" data-trans="greet"></h2>
-    </sec>
+    <header class="container">
+      <h2 class="gretting row justify-content-center" data-trans="greet"></h2>
+    </header>
 
-    <sec class="table">
-      <table>
+    <div class="table-responsive">
+      <table class="table table-light table-striped">
         <thead>
-          <td class="id" data-trans="id">id</td>
-          <td class="title" data-trans="title">Title</td>
-          <td class="price" data-trans="price">Price</td>
-          <td class="action" colspan="3" data-trans="actions">Actions</td>
+          <td class="id table-secondary" data-trans="id">id</td>
+          <td class="title table-secondary" data-trans="title">Title</td>
+          <td class="price table-secondary" data-trans="price">Price</td>
+          <td class="action table-secondary" colspan="3" data-trans="actions">
+            Actions
+          </td>
         </thead>
         <tbody class="table-body"></tbody>
       </table>
-      <button class="btn-add" data-trans="add" onclick="onAddBook()">Add Books</button>
-    </sec>
+
+      <div class="d-grid col-2 mx-auto my-2">
+        <button
+          type="button"
+          class="btn btn-success"
+          data-trans="add"
+          onclick="onAddBook()"
+        >
+          Add Books
+        </button>
+      </div>
+    </div>
 
     <sec class="review-section">
-      <div class="modal-container">
-      </div>
+      <div class="modal-container"></div>
     </sec>
 
     <footer>
-      <h4 class="credits">© Uri Baynesay 2022</h4>
+      <h6 class="credits">© Uri Baynesay 2022</h4>
     </footer>
 
     <script src="js/utils.js"></script>
+    <script src="lib/bootstrap.bundle.min.js"></script>
     <script src="services/storage.service.js"></script>
     <script src="services/i18n.service.js"></script>
     <script src="services/books.service.js"></script>
