@@ -9,23 +9,25 @@
     <title>Books Managment</title>
   </head>
   <body onload="init()">
+    <!-- header -->
     <header class="container">
       <h2 class="gretting row justify-content-center" data-trans="greet"></h2>
     </header>
 
+    
+<!-- table -->
     <div class="table-responsive">
       <table class="table table-light table-striped">
         <thead>
-          <td class="id table-secondary" data-trans="id">id</td>
-          <td class="title table-secondary" data-trans="title">Title</td>
-          <td class="price table-secondary" data-trans="price">Price</td>
-          <td class="action table-secondary" colspan="3" data-trans="actions">
-            Actions
-          </td>
+          <td class="id table-secondary" data-trans="id" onclick="onSort('id')"></td>
+          <td class="title table-secondary" data-trans="title" onclick="onSort('title')"></td>
+          <td class="price table-secondary" data-trans="price" onclick="onSort('price')"></td>
+          <td class="action table-secondary" colspan="3" data-trans="actions"></td>
         </thead>
         <tbody class="table-body"></tbody>
       </table>
     </div>
+
 
     <div class="d-grid col-5 mx-auto my-2">
       <div class="mb-3">
@@ -50,6 +52,7 @@
       <div class="modal-container"></div>
     </sec>
 
+    <!-- footer -->
     <footer>
       <h6 class="credits">© Uri Baynesay 2022</h4>
     </footer>

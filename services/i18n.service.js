@@ -37,10 +37,18 @@ const G_TRANS={
         en:'Review',
         he:'תקציר'
     },
+    'save-changes':{
+        en:'Save Changes?',
+        he:'שמור'
+    },
+    close : {
+        en:'Close',
+        he:'סגור'
+    }
 };
 
-var gCurrLan='he'
-var gCurrCurrency='USD'
+var gCurrLan='en'
+var gCurrCurrency='ILS'
 
 function getTrans(transKey){
     const transOptions=G_TRANS[transKey];
@@ -52,7 +60,11 @@ function getTrans(transKey){
 
 function doTrans(){
     const elDoc=document.body;
-    elDoc.classList.add('rtl')
+    if(gCurrLan==='he'){
+    elDoc.classList.add('rtl');
+    }else{
+        elDoc.classList.remove('rtl')
+    }
     const elTxts=elDoc.querySelectorAll('[data-trans]');
     elTxts.forEach((txt) => txt.innerText=getTrans(txt.dataset.trans));
     

@@ -6,6 +6,10 @@ body{
 .body,.rtl{
     direction: rtl;
 }
+
+thead td:hover{
+    background-color: #65717b;
+}
 /* .gretting{
     color: cadetblue;
     text-align: center;

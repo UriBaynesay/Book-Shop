@@ -15,7 +15,7 @@ function renderBooks() {
         <td class="currency">${book.price}</td>
         <td><button type="button" class="btn btn-outline-info" data-trans="review" onclick="onReview('${book.id}')"></button></td>
         <td><button type="button" class="btn btn-outline-primary" data-trans="update" onclick="onUpdateBook('${book.id}')"></button></td>
-        <td><button type="button" class="btn btn-outline-danger" data-trans="delete" onclick="onDeleteBook('${book.id}')"></button></td>
+        <td><button type="button" class="btn btn-outline-danger" data-trans="delete"('${book.id}')"></button></td>
         </tr>`;
   });
 
@@ -73,8 +73,15 @@ function onAddBook() {
   const bookPrice=elInput[1].value;
   
   elInput.forEach((el)=>el.value='');
-  
+
   AddBook(bookName, bookPrice);
+  renderBooks();
+  doTrans();
+}
+
+function onSort(sortBy){
+  debugger
+  sortBooks(sortBy);
   renderBooks();
   doTrans();
 }

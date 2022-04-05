@@ -2,8 +2,16 @@
 
 const BOOKS_DB = "booksDB";
 var gBooks = [];
+var sortBy='';
 
 _createBooks();
+
+function sortBooks(sortBy){
+  gBooks.sort(function (book1,book2){
+    return (book2[sortBy]<book1[sortBy])?1:-1;
+  },sortBy)
+  _saveBooks();
+}
 
 function updateBookRate(bookId,action){
     const book=gBooks[getBookIdx(bookId)];
