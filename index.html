@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Books Managment</title>
+  </head>
+  <body onload="init()">
+    <sec class="header">
+      <h2 class="gretting" data-trans="greet"></h2>
+    </sec>
+
+    <sec class="table">
+      <table>
+        <thead>
+          <td class="id" data-trans="id">id</td>
+          <td class="title" data-trans="title">Title</td>
+          <td class="price" data-trans="price">Price</td>
+          <td class="action" colspan="3" data-trans="actions">Actions</td>
+        </thead>
+        <tbody class="table-body"></tbody>
+      </table>
+      <button class="btn-add" data-trans="add" onclick="onAddBook()">Add Books</button>
+    </sec>
+
+    <sec class="review-section">
+      <div class="modal-container">
+      </div>
+    </sec>
+
+    <footer>
+      <h4 class="credits">© Uri Baynesay 2022</h4>
+    </footer>
+
+    <script src="js/utils.js"></script>
+    <script src="services/storage.service.js"></script>
+    <script src="services/i18n.service.js"></script>
+    <script src="services/books.service.js"></script>
+    <script src="js/books.controller.js"></script>
+  </body>
+</html>
