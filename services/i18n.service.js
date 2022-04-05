@@ -24,7 +24,19 @@ const G_TRANS={
     add:{
         en:'Add Book',
         he:'הוסף ספר'
-    }
+    },
+    delete:{
+        en:'Delete',
+        he:'מחיקה'
+    },
+    update:{
+        en:'Update',
+        he:'עדכון'
+    },
+    review:{
+        en:'Review',
+        he:'תקציר'
+    },
 };
 
 var gCurrLan='he'

@@ -13,9 +13,9 @@ function renderBooks() {
         <td>${book.id}</td>
         <td>${book.title}</td>
         <td>${book.price}</td>
-        <td><button class="btn-review" onclick="onReview('${book.id}')">Review</button></td>
-        <td><button class="btn-update" onclick="onUpdateBook('${book.id}')">Update</button></td>
-        <td><button class="btn-delete" onclick="onDeleteBook('${book.id}')">Delete</button></td>
+        <td><button class="btn-review" data-trans="review" onclick="onReview('${book.id}')"></button></td>
+        <td><button class="btn-update" data-trans="update" onclick="onUpdateBook('${book.id}')"></button></td>
+        <td><button class="btn-delete" data-trans="delete" onclick="onDeleteBook('${book.id}')"></button></td>
         </tr>`;
   });
 
