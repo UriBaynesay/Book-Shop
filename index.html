@@ -25,17 +25,25 @@
         </thead>
         <tbody class="table-body"></tbody>
       </table>
+    </div>
 
-      <div class="d-grid col-2 mx-auto my-2">
-        <button
-          type="button"
-          class="btn btn-success"
-          data-trans="add"
-          onclick="onAddBook()"
-        >
-          Add Books
-        </button>
+    <div class="d-grid col-5 mx-auto my-2">
+      <div class="mb-3">
+        <label for="add-book-name" class="form-label" data-trans="title"></label>
+        <input type="text" class="form-control" id="add-book-name">
       </div>
+      <div class="mb-3">
+        <label for="add-book-price" class="form-label" data-trans="price"></label>
+        <input type="text" class="form-control" id="add-book-price">
+      </div>
+      <button
+        type="button"
+        class="btn btn-success"
+        data-trans="add"
+        onclick="onAddBook()"
+      >Add Books
+      </button>
+      
     </div>
 
     <sec class="review-section">

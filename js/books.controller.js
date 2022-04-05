@@ -68,8 +68,12 @@ function onDeleteBook(bookId) {
 }
 
 function onAddBook() {
-  const bookName = prompt("Please enter the books title");
-  const bookPrice = prompt("please enter the books price");
+  const elInput=document.querySelectorAll('input');
+  const bookName=elInput[0].value;
+  const bookPrice=elInput[1].value;
+  
+  elInput.forEach((el)=>el.value='');
+  
   AddBook(bookName, bookPrice);
   renderBooks();
   doTrans();
