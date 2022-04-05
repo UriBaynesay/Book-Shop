@@ -44,6 +44,10 @@ const G_TRANS={
     close : {
         en:'Close',
         he:'סגור'
+    },
+    'next-page':{
+        en:'Next page',
+        he:'עמוד הבא'
     }
 };
 
