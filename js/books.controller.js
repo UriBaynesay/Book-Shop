@@ -85,3 +85,15 @@ function onSort(sortBy){
   renderBooks();
   doTrans();
 }
+
+function onChangeLang(elSelect){
+  setLang(elSelect.value);
+  renderBooks();
+  doTrans();
+}
+
+function onChangeCurr(elSelect){
+  setCurr(elSelect.value);
+  renderBooks();
+  doTrans();
+}

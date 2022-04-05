@@ -80,3 +80,11 @@ function getConvertedPrice(price){
     //assuming 1 ILS = 3 USD
     return ''+(price/3)
 }
+
+function setLang(val){
+    gCurrLan=val;
+}
+
+function setCurr(val){
+    gCurrCurrency=val;
+}
