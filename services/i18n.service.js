@@ -55,8 +55,7 @@ function doTrans(){
     elDoc.classList.add('rtl')
     const elTxts=elDoc.querySelectorAll('[data-trans]');
     elTxts.forEach((txt) => txt.innerText=getTrans(txt.dataset.trans));
-
-    debugger
+    
     //converting the price to its value
     var elPrices=elDoc.querySelectorAll('.currency');
     const opt={style:'currency',currency:gCurrCurrency};

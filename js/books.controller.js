@@ -58,11 +58,13 @@ function onUpdateBook(bookId) {
   const newPrice = +prompt("Please enter the new price");
   UpdateBook(bookId, newPrice);
   renderBooks();
+  doTrans();
 }
 
 function onDeleteBook(bookId) {
   removeBook(bookId);
   renderBooks();
+  doTrans();
 }
 
 function onAddBook() {
@@ -70,4 +72,5 @@ function onAddBook() {
   const bookPrice = prompt("please enter the books price");
   AddBook(bookName, bookPrice);
   renderBooks();
+  doTrans();
 }
