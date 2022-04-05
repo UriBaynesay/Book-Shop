@@ -12,7 +12,7 @@ function renderBooks() {
     return `<tr>
         <td>${book.id}</td>
         <td>${book.title}</td>
-        <td>${book.price}</td>
+        <td class="currency">${book.price}</td>
         <td><button class="btn-review" data-trans="review" onclick="onReview('${book.id}')"></button></td>
         <td><button class="btn-update" data-trans="update" onclick="onUpdateBook('${book.id}')"></button></td>
         <td><button class="btn-delete" data-trans="delete" onclick="onDeleteBook('${book.id}')"></button></td>
