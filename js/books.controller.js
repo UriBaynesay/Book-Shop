@@ -40,10 +40,10 @@ function onReview(bookId) {
   elModal.innerHTML =
     bookName +
     bookDesc +
-    `<button type="button" class="btn btn-outline-danger position-absolute top-0 start-0" onclick="onCloseModal()">X</button>
+    `<button type="button" class="btn-ext-modal" onclick="onCloseModal()">X</button>
     <div class="rate">
       <button class="add-rate" onclick="onAddRate('${bookId}','+')">+</button>
-      <a class="book-rate">${getBookRate(bookId)}</a>
+      <text class="book-rate">${getBookRate(bookId)}</text>
       <button class="sub-rate" onclick="onSubRate('${bookId}','-')">-</button>
     </div>`;
   elModal.classList.add("show");
